@@ -39,6 +39,10 @@
     <object-name>axes</object-name>
     <object-name>montants</object-name>
     <object-name>trous</object-name>
+    <object-name>cableGH</object-name>
+    <object-name>cableGB</object-name>
+    <object-name>cableDB</object-name>
+    <object-name>cableDH</object-name>
 
     <!-- Objets transparents -->
     <object-name>vitres</object-name>
@@ -56,7 +60,7 @@
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
-    <texture>glass_shader.png</texture>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
     <object-name>vitres</object-name>
   </animation>
 
@@ -86,6 +90,10 @@
     <object-name>axes</object-name>
     <object-name>montants</object-name>
     <object-name>trous</object-name>
+    <object-name>cableGH</object-name>
+    <object-name>cableGB</object-name>
+    <object-name>cableDB</object-name>
+    <object-name>cableDH</object-name>
 
     <property-base>sim/model/livery</property-base>
     <texture-prop>texture</texture-prop>
@@ -231,6 +239,74 @@
     </axis>
   </animation>
 
+  <animation>
+    <type>rotate</type>
+    <object-name>cableGH</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor> 4 </factor>
+    <center>
+      <x-m> -0.927 </x-m>
+      <y-m> -3.532 </y-m>
+      <z-m>  0.732 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>cableGB</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor> 5 </factor>
+    <center>
+      <x-m> -0.927 </x-m>
+      <y-m> -3.532 </y-m>
+      <z-m>  0.551 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>cableDH</object-name>
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <factor> 4 </factor>
+    <center>
+      <x-m> -0.927 </x-m>
+      <y-m>  3.532 </y-m>
+      <z-m>  0.732 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>cableDB</object-name>
+    <property>surface-positions/right-aileron-pos-norm</property>
+    <factor> 5 </factor>
+    <center>
+      <x-m> -0.927 </x-m>
+      <y-m>  3.532 </y-m>
+      <z-m>  0.551 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
   <!-- Volets -->
   <animation>
     <type>rotate</type>
@@ -349,6 +425,52 @@
       <z>  0 </z>
     </axis>
   </animation>
+
+  <!-- Effets lumineux
+  <model>
+    <path>Aircraft/Piper-PA-18/Models/lights/beacon.xml</path>
+    <offsets>
+      <x-m> 0.708 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.527 </z-m>
+    </offsets>
+  </model> -->
+
+  <model>
+    <path>Aircraft/Piper-PA-18/Models/lights/RedLight.xml</path>
+    <offsets>
+      <x-m> -1.465 </x-m>
+      <y-m> -5.306 </y-m>
+      <z-m>  0.648 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Piper-PA-18/Models/lights/GreenLight.xml</path>
+    <offsets>
+      <x-m> -1.465 </x-m>
+      <y-m>  5.306 </y-m>
+      <z-m>  0.648 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Piper-PA-18/Models/lights/StrobeWhite.xml</path>
+    <offsets>
+      <x-m> -1.445 </x-m>
+      <y-m> -5.306 </y-m>
+      <z-m>  0.648 </z-m>
+    </offsets>
+  </model>
+
+  <model>
+    <path>Aircraft/Piper-PA-18/Models/lights/StrobeWhite.xml</path>
+    <offsets>
+      <x-m> -1.445 </x-m>
+      <y-m>  5.306 </y-m>
+      <z-m>  0.648 </z-m>
+   </offsets>
+  </model>
 
 </PropertyList>
 

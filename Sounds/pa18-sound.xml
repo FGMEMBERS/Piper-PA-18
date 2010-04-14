@@ -137,18 +137,23 @@
           </not>
         </and>
       </condition>
-      <volume>
-        <property>/sim/Piper-PA-18/engine-volume-high-rpm</property>
-        <offset>-0.0</offset>
-        <min>0.0</min>
-        <max>1.0</max>
-      </volume>        
-      <pitch>
+      <volume> 
+        <property>/orientation/alpha-deg</property>
+        <type>log</type>
+        <min>1.0</min>
+        <max>1.5</max>
+      </volume>
+      <volume> 
+        <property>/sim/current-view/internal</property>
+        <offset>1.0</offset>
+        <factor>-0.4</factor>
+      </volume>
+      <pitch> 
         <property>/engines/engine/rpm</property>
-        <factor>0.00028</factor>
-        <min>0.15</min>
+        <factor>0.0009496</factor>
+        <min>0.6</min>
         <max>2.0</max>
-        <offset>-0.0</offset>
+        <offset>0</offset>
       </pitch>
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
@@ -166,18 +171,23 @@
           </not>
         </and>
       </condition>
-      <volume>
-        <property>/sim/Piper-PA-18/engine-volume-low-rpm</property>
-        <offset>-0.0</offset>
-        <min>0.0</min>
-        <max>1.0</max>
+      <volume> 
+        <property>/orientation/alpha-deg</property>
+        <type>log</type>
+        <min>1.0</min>
+        <max>1.5</max>
       </volume>
-      <pitch>
+      <volume> 
+        <property>/sim/current-view/internal</property>
+        <offset>1.0</offset>
+        <factor>-0.4</factor>
+      </volume>
+      <pitch> 
         <property>/engines/engine/rpm</property>
-        <factor>0.0005</factor>
-        <min>0.35</min>
+        <factor>0.0009496</factor>
+        <min>0.6</min>
         <max>2.0</max>
-        <offset>-0.0</offset>
+        <offset>0</offset>
       </pitch>
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
@@ -193,29 +203,23 @@
           <property>/sim/current-view/internal</property>
         </and>
       </condition>
-      <volume>
-        <property>/sim/Piper-PA-18/engine-volume-high-rpm</property>
-        <offset>-0.0</offset>
-        <min>0.0</min>
-        <max>1.0</max>
-      </volume>
-      <!--
-      <volume>
+      <volume> 
         <property>/orientation/alpha-deg</property>
         <type>log</type>
-        <min>0.2</min>
-        <max>1.0</max>
+        <min>1.0</min>
+        <max>1.5</max>
       </volume>
-      <volume>
+      <volume> 
         <property>/sim/current-view/internal</property>
-        <factor>0.5</factor>
-      </volume>-->
-      <pitch>
+        <offset>1.0</offset>
+        <factor>-0.4</factor>
+      </volume>
+      <pitch> 
         <property>/engines/engine/rpm</property>
-        <factor>0.000226</factor>
-        <min>0.15</min>
-        <max>4.0</max>
-        <offset>-0.0</offset>
+        <factor>0.0009496</factor>
+        <min>0.6</min>
+        <max>2.0</max>
+        <offset>0</offset>
       </pitch>
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
@@ -231,30 +235,23 @@
           <property>/sim/current-view/internal</property>
         </and>
       </condition>
-      <volume>
-        <property>/sim/Piper-PA-18/engine-volume-low-rpm</property>
-        <offset>-0.0</offset>
-        <min>0.0</min>
-        <max>1.0</max>
-      </volume>
-      <!--
-      <volume>
+      <volume> 
         <property>/orientation/alpha-deg</property>
         <type>log</type>
-        <min>0.2</min>
-        <max>1.0</max>
+        <min>1.0</min>
+        <max>1.5</max>
       </volume>
-      <volume>
+      <volume> 
         <property>/sim/current-view/internal</property>
-        <factor>0.5</factor>
+        <offset>1.0</offset>
+        <factor>-0.4</factor>
       </volume>
-      -->
-      <pitch>
+      <pitch> 
         <property>/engines/engine/rpm</property>
-        <factor>0.0007462</factor>
-        <min>0.5</min>
-        <max>4.0</max>-
-        <offset>-0.0</offset>
+        <factor>0.0009496</factor>
+        <min>0.6</min>
+        <max>2.0</max>
+        <offset>0</offset>
       </pitch>
       <reference-dist>100</reference-dist>
       <max-dist>1000</max-dist>
