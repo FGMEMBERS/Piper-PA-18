@@ -97,6 +97,7 @@
       <file>Aircraft/Piper-PA-18/Nasal/light.nas</file>
       <file>Aircraft/Piper-PA-18/Nasal/pa18.nas</file>
       <file>Aircraft/Piper-PA-18/Nasal/liveries.nas</file>
+      <file>Aircraft/Piper-PA-18/Nasal/immat.nas</file>
     </pa18>
   </nasal>
 
