@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <sim include="Nasal/views.xml">
+
+    <author>BARANGER Emmanuel (3D/FDM)</author>
+    <aircraft-version>0.2</aircraft-version>
+    <status>Alpha</status>
+
+    <fuel-fraction>1.0</fuel-fraction>
+
+    <startup>
+      <splash-texture>Aircraft/Piper-PA-18/pa18-splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <path archive="y">Aircraft/Piper-PA-18/Sounds/pa18-sound.xml</path>
+    </sound>
+
+    <model>
+      <path archive="y">Aircraft/Piper-PA-18/Models/pa18.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+        <int type="int">0</int>
+      </generic>
+    </multiplay>
+
+    <help>
+      <title>Piper PA 18</title>
+      <line>______________________________________________</line>
+    </help>
+
+    <pa18>
+      <state type="int">0</state>
+      <airspeed-kmh type="float">0.0</airspeed-kmh>
+      <engine-rpm type="float">0.0</engine-rpm>
+      <engine-volume-low-rpm type="float">0.0</engine-volume-low-rpm>
+      <engine-volume-high-rpm type="float">0.0</engine-volume-high-rpm>
+    </pa18>
+
+    <weight n="0">
+      <name>Pilot</name>
+      <weight-lb>180</weight-lb>
+      <max-lb>240</max-lb>
+      <min-lb>140</min-lb>
+    </weight>
+
+    <weight n="1">
+      <name>Pax</name>
+      <weight-lb>0</weight-lb>
+      <max-lb>240</max-lb>
+      <min-lb>0</min-lb>
+    </weight>
+
+    <weight n="2">
+      <name>Baggage</name>
+      <weight-lb>0</weight-lb>
+      <max-lb>20</max-lb>
+      <min-lb>0</min-lb>
+    </weight>
+
+    <flaps>
+        <setting>0.00</setting> <!-- Cruise -->
+        <setting>0.50</setting> <!-- Half -->
+        <setting>1.0</setting> <!-- Full -->
+    </flaps>
+
+    <menubar include="Dialogs/pa18-menu.xml"/>
+
+  </sim>
+
+  <input>
+    <keyboard include="Nasal/pa18-keyboard.xml"/>
+  </input>
+
+  <engines>
+    <engine>
+      <rpm type="float">0.0</rpm>
+    </engine>
+  </engines>
+
+  <nasal>
+    <pa18>
+      <file>Aircraft/Piper-PA-18/Nasal/doors.nas</file>
+      <file>Aircraft/Piper-PA-18/Nasal/light.nas</file>
+      <file>Aircraft/Piper-PA-18/Nasal/pa18.nas</file>
+      <file>Aircraft/Piper-PA-18/Nasal/liveries.nas</file>
+      <file>Aircraft/Piper-PA-18/Nasal/immat.nas</file>
+    </pa18>
+  </nasal>
+
+</PropertyList>
+
