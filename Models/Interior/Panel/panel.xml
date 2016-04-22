@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
@@ -11,9 +11,9 @@
     <!-- Objets transparents -->
   </animation>
 
-  <!-- Asi -->
+  <!-- ASI -->
   <model>
-    <path>Aircraft/Piper-PA-18/Models/Interior/Panel/Instruments/ASI/ASI.xml</path>
+    <path>Aircraft/Piper-PA-18/Models/Interior/Panel/Instruments/asi/asi.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
       <y-m> -0.090 </y-m>
@@ -31,9 +31,9 @@
     </offsets>
   </model>
 
-  <!-- Alt -->
+  <!-- ALT -->
   <model>
-    <path>Aircraft/Piper-PA-18/Models/Interior/Panel/Instruments/Altimeter/Altimeter.xml</path>
+    <path>Aircraft/Piper-PA-18/Models/Interior/Panel/Instruments/alt/alt.xml</path>
     <offsets>
       <x-m> 0.000 </x-m>
       <y-m> 0.090 </y-m>
@@ -41,7 +41,7 @@
     </offsets>
   </model>
 
-  <!-- Turn -->
+  <!-- TURN -->
   <model>
     <path>Aircraft/Piper-PA-18/Models/Interior/Panel/Instruments/turn/turn.xml</path>
     <offsets>
@@ -51,7 +51,7 @@
     </offsets>
   </model>
 
-  <!-- hdg -->
+  <!-- HDG -->
   <model>
     <path>Aircraft/Piper-PA-18/Models/Interior/Panel/Instruments/hdg/hdg.xml</path>
     <offsets>
@@ -61,9 +61,9 @@
     </offsets>
   </model>
 
-  <!-- Vsi -->
+  <!-- VSI -->
   <model>
-    <path>Aircraft/Piper-PA-18/Models/Interior/Panel/Instruments/VSI/VSI.xml</path>
+    <path>Aircraft/Piper-PA-18/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
     <offsets>
       <x-m> 0.000 </x-m>
       <y-m> 0.090 </y-m>
