@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+  <path>Extrainglass.ac</path>
+  
+  <animation>
+    <!-- Objets transparents -->
+    <object-name>ExtRainintvitres1</object-name>
+    
+    <object-name>ExtRainintvitres2</object-name>
+    
+    <object-name>ExtRainintvitres3</object-name>
+  </animation>    
+  
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Diamond-Da42/Models/Effects/Glass/glass</inherits-from>
+    <object-name>ExtRainintvitres1</object-name>
+    
+    <object-name>ExtRainintvitres2</object-name>
+    
+    <object-name>ExtRainintvitres3</object-name>
+  </effect>
+  
+  <animation>
+    <name>ensemble1</name>
+    <object-name>ExtRainintvitres1</object-name>
+  </animation>
+  
+  <animation>
+    <name>ensemble2</name>
+    <object-name>ExtRainintvitres2</object-name>
+  </animation>
+  
+  <animation>
+    <name>ensemble3</name>
+    <object-name>ExtRainintvitres3</object-name>
+  </animation>
+  
+  <animation>
+    <type>timed</type>
+    <object-name>ensemble1</object-name>
+    <object-name>ensemble2</object-name>
+    <object-name>ensemble3</object-name>
+    <use-personality type="bool">true</use-personality>
+    <branch-duration-sec>0.1</branch-duration-sec>
+    <branch-duration-sec>0.1</branch-duration-sec>
+    <branch-duration-sec>0.1</branch-duration-sec>
+  </animation>
+  
+</PropertyList>
